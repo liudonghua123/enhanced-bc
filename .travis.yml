@@ -1,4 +1,4 @@
 language: c
 compiler:
   - gcc
-script: ./configure && make
+script: sudo apt-get install texinfo && aclocal && autoconf && automake --add-missing && ./configure && make
